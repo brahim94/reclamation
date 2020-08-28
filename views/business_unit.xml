@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+    <record id="view_reclamation_inherit" model="ir.ui.view">
+                <field name="name">reclamation.form.inherit</field>
+                <field name="model">res.partner</field>
+                <field name="inherit_id" ref="base.view_partner_form"/>
+                <field name="arch" type="xml">
+                    
+                <xpath expr="//field[@name='vat']" position="after">
+                    <field name="business_unit_id" />
+                    <field name="magasin_id" />
+                    <field name="sms_authorisation" />         
+                </xpath>
+
+    
+                </field>
+    </record>
+
+    </odoo>
