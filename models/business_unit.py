@@ -12,3 +12,8 @@ class business_unit(models.Model):
             
     business_unit_id = fields.Many2one('crm.team', string='BU')
     magasin_id = fields.Many2one('crm.magasin', string='Magasin')
+    # company_typee = fields.Selection(string='Company Type',
+    #     selection=[('person', 'Individual'), ('company', 'Company')], default='person',
+    #     compute='_compute_company_type', inverse='_write_company_type')
+
+    
